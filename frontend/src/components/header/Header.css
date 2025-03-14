@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px grey;
+    position: relative;
+    font-weight: 600;
+  }
+  ul{
+    font-size: 1.3rem;
+  }
+  .header h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(169, 164, 164);
+  }
+.header .icon{
+    color: #a9d6e3;
+}
+  .header .nav-link {
+    position: relative; 
+    display: inline-block; 
+}
+.header .nav-i:hover{
+  transform: scale(1.08); 
+  border-bottom: 3px solid #a9d6e3;
+}
+.header .profile{
+  color: #a9d6e3;
+}
+.header .profile:hover{
+  transform: scale(1.05); 
+}
+.header h1:hover{
+  transform: scale(1.015); 
+}
+
+  @media  screen and (max-width:576px) {
+    .header{
+        justify-content: space-around;
+    }
+  
+}
+@media screen and (min-width:577px) and (max-width:992px){
+    .header{
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,95 @@
+.register{
+    background-color: rgb(248, 247, 247);
+}
+.register .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+.register h1, .register .button, .register .p {
+    text-align: center;
+}
+.register .mb-3{
+    width: 45%;
+}
+.register{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+.register .child1,.register .child2{
+    width: 600px;
+}
+.register .child2 img{
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+}
+.register form{
+    background-color: rgb(209, 209, 209,0.4);
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8) , 0 -2px 8px rgba(0, 0, 0, 0.8) ;
+}
+.register button{
+    background-color: #a9d6e3;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 25%;
+}
+.register button:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); 
+}
+.register form:hover{
+    transform: scale(1.008); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.register .child2{
+    position: relative;
+}
+.register .child2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); 
+}
+@media screen and (min-width:577px) and (max-width:992px){
+    .register .form{
+        width: 80%;
+        margin: auto;
+    }
+    .register .child2{
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .register .form{
+        width: 90%;
+        margin: auto;
+    }
+    .register .form-row{
+        display: block;
+    }
+    .register .mb-3{
+        width: 95%;
+        margin: auto;
+    }
+    .register button{
+        width: 100%;
+    }
+    .register .child2 img{
+        height: 300px;
+    }
+    .register .child2{
+        margin-top: -50px;
+    }
+}

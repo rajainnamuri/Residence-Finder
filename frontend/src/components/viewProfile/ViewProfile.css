@@ -1,0 +1,82 @@
+.viewProfile{
+    background-color: rgba(180, 215, 224, 0.2);
+    min-height: 100vh;
+    position: relative;
+}
+.viewProfile .back {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 2;
+}
+.viewProfile .back:hover{
+    font-size: 2.5rem;
+}
+.viewProfile .hero{
+    background-image: url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?cs=srgb&dl=pexels-jvdm-1457842.jpg&fm=jpg);
+    height: 55vh;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.viewProfile .hero:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); 
+}
+.viewProfile .hero h1{
+    padding-top: 15vh;
+    font-size: 3.5rem;
+}
+.viewProfile .profile{
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+    width: 40%;
+    padding: 1% 3% 2% 3%;
+    margin-top: -130px;
+    z-index: 10;
+    position: relative;
+}
+.viewProfile .profile .icon{
+    color: #a9d6e3;
+    font-size: 5rem;
+    text-align: center;
+}
+.viewProfile .profile button{
+    background-color: #a9d6e3;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 50%;
+}
+.viewProfile .profile button:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); 
+}
+.viewProfile .profile .button{
+    width: 100%;
+    text-align: center;
+}
+@media screen and (min-width:577px) and (max-width:992px){
+    .viewProfile .profile{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .viewProfile .profile{
+        width: 90%;
+    }
+}

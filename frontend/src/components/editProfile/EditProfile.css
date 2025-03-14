@@ -1,0 +1,135 @@
+.editProfile{
+    background-color: rgb(248, 247, 247);
+    min-height: 100vh;
+}
+.editProfile .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+.editProfile h1, .editProfile .button, .editProfile .p {
+    text-align: center;
+}
+.editProfile .mb-3{
+    width: 45%;
+}
+.editProfile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+.editProfile .child1,.editProfile .child2{
+    width: 600px;
+}
+.editProfile .child2 img{
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+}
+.editProfile form{
+    background-color: rgb(209, 209, 209,0.4);
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8) , 0 -2px 8px rgba(0, 0, 0, 0.8) ;
+}
+.editProfile button{
+    background-color: #a9d6e3;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 25%;
+}
+.editProfile button:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); 
+}
+.editProfile form:hover{
+    transform: scale(1.008); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.editProfile .child2{
+    position: relative;
+}
+.editProfile .child2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); 
+}
+.editProfile .modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.editProfile .modal-overlay .modal-dialog {
+    width: 400px;
+    box-shadow: 5px 5px 5px grey, -5px -5px 5px grey;
+    background-color: white;
+    padding: 1rem; 
+}
+.editProfile .modal-overlay .modal-dialog .button{
+    width: 100%;
+    text-align: center;
+}
+.editProfile .modal-overlay .modal-dialog button{
+    width: 50%;
+}
+.editProfile .modal-overlay .modal-dialog button:hover{
+    background-color: #a9d6e3;
+}
+
+@media screen and (min-width:577px) and (max-width:992px){
+    .editProfile .form{
+        width: 80%;
+        margin: auto;
+    }
+    .editProfile .child1{
+        margin-top: -20px;
+    }
+    .editProfile .child2{
+        padding-top: 20px;
+      }
+}
+
+@media screen and (max-width:576px){
+    .editProfile .form{
+        width: 90%;
+        margin: auto;
+    }
+    .editProfile .form-row{
+        display: block;
+    }
+    .editProfile .mb-3{
+        width: 95%;
+        margin: auto;
+    }
+    .editProfile button{
+        width: 100%;
+    }
+    .editProfile .child2 img{
+        height: 300px;
+    }
+    .editProfile .child1{
+        margin-top: -70px;
+    }
+    .editProfile .modal-dialog .modal-overlay{
+        width: 250px;
+      }
+      .editProfile .child2{
+        padding-top: 20px;
+      }
+}

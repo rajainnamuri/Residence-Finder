@@ -1,0 +1,123 @@
+.view-house .view{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8) , 0 -2px 8px rgba(0, 0, 0, 0.8) ;
+    padding: 2% 2% 2% 5%;
+}
+.view-house{
+    padding: 5% 2% 5% 2%;
+    min-height: 100vh;
+    background-color: rgb(209, 209, 209,0.4);
+}
+.view-house .view h1{
+    text-align: center;
+}
+.view-house .view .button{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.view-house .view button{
+    background-color: #a9d6e3;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.view-house .view button:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); 
+}
+.view-house .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000;
+}
+
+.view-house .modal-overlay .modal-content {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-house .modal-overlay .modal-content img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.view-house .modal-overlay .modal-content .close-btn {
+    position: absolute;
+    top: -70px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: white;
+}
+.view-house .modal-overlay .modal-content .close-btn:hover,.view-house .modal-overlay .modal-content .modal-controls .prev:hover,.view-house .modal-overlay .modal-content .modal-controls .next:hover{
+    transform: scale(1.1); 
+}
+.view-house .modal-overlay .modal-content .modal-controls .prev {
+    position: absolute;
+    left: -90px;
+    top: 40%;
+    background: none;
+    border: none;
+    color: white;
+}
+.view-house .modal-overlay .modal-content .modal-controls .next {
+    position: absolute;
+    right: -90px;
+    top: 40%;
+    background: none;
+    border: none;
+    color: white;
+}
+
+@media screen and (min-width:577px) and (max-width:992px){
+    .view-house .view{
+        width: 80%;
+    }
+    .view-house .modal-overlay .modal-content {
+        width: 80%;
+    }
+    .view-house .modal-overlay .modal-content .modal-controls .prev {
+        left: -50px;
+    }
+    .view-house .modal-overlay .modal-content .modal-controls .next {
+        right: -50px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .view-house .view{
+        width: 100%;
+    }
+    .view-house .modal-overlay .modal-content {
+        width: 85%;
+    }
+    .view-house .modal-overlay .modal-content img {
+        height: 300px;
+    }
+    .view-house .modal-overlay .modal-content .modal-controls .prev {
+        left: -35px;
+    }
+    .view-house .modal-overlay .modal-content .modal-controls .next {
+        right: -35px;
+    }
+}

@@ -1,0 +1,105 @@
+.addHouse{
+    min-height: 100vh;
+    background-color: rgb(231, 242, 245);
+    padding-bottom: 5%;
+}
+.addHouse .form-row{
+    display: flex;
+    justify-content: space-around;
+}
+.addHouse form{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(255, 255, 255,0.8);
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8) , 0 -2px 8px rgba(0, 0, 0, 0.8) ;
+    padding: 2% 2%;
+}
+.addHouse .form-group{
+    width: 45%;
+    margin-top: 20px;
+}
+.addHouse .button{
+    width: 100%;
+    text-align: center;
+}
+.addHouse button{
+    width: 20%;
+    margin-top: 20px;
+    background-color: #a9d6e3;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.addHouse .hero{
+    padding-top: 2%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.addHouse form:hover{
+    transform: scale(1.008); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.addHouse button:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); 
+    background-color: #a9d6e3;
+    color: white;
+}
+.addHouse .form-control{
+    background-color: rgb(248, 247, 247);
+}
+.addHouse label{
+    margin-bottom: 2%;
+}
+.addHouse .modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.addHouse .modal-overlay .modal-content {
+    width: 400px;
+    box-shadow: 5px 5px 5px grey, -5px -5px 5px grey;
+    background-color: white;
+    padding: 1rem; 
+}
+
+@media screen and (min-width:577px) and (max-width:992px){
+    .addHouse .form-row{
+        display: block;
+    }
+    .addHouse form{
+        width: 80%;
+    }
+    .addHouse .form-group{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:576px){
+    .addHouse .modal-overlay .modal-content {
+        width: 250px;
+    }
+    .addHouse button{
+        width: 40%;
+    }
+    .addHouse .form-row{
+        display: block;
+    }
+    .addHouse form{
+        width: 95%;
+    }
+    .addHouse .form-group{
+        width: 100%;
+    }
+}
