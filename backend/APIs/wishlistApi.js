@@ -1,7 +1,7 @@
 const express = require('express');
 const { ObjectId } = require('mongodb');
 const expressAsyncHandler = require('express-async-handler');
-const tokenVerify = require('../middlewares/tokenVerify');
+const tokenVerify = require('../middlewares/tokenverify');
 
 const wishlistApp = express.Router();
 
