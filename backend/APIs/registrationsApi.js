@@ -3,7 +3,7 @@ const { ObjectId } = require('mongodb');
 const jwt = require('jsonwebtoken');
 const bcryptjs = require('bcryptjs');
 const expressAsyncHandler = require('express-async-handler');
-const tokenVerify = require('../middlewares/tokenVerify');
+const tokenVerify = require('../middlewares/tokenverify');
 require('dotenv').config();
 
 const registrationsApp = express.Router();
